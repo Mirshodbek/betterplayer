@@ -284,6 +284,7 @@ abstract class BetterPlayerControlsState<T extends StatefulWidget>
         preferredName =
             asmsTrackNames.length > index ? asmsTrackNames[index] : null;
       }
+      if (children.length < 5)
       children.add(_buildTrackRow(asmsTracks[index], preferredName));
     }
 
